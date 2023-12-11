@@ -1,0 +1,33 @@
+POST http://localhost:3333/venda
+Content-Type: application/json
+
+{
+    "produto": "Bolo de Chocolate",
+    "valor": 30,
+    "quantidade": 1
+}
+
+###
+
+GET http://localhost:3333/venda
+
+###
+
+GET http://localhost:3333/vendas?search=Bolo
+
+###
+
+
+PUT http://localhost:3333/vendas/95073189-4e4d-4410-937d-071a1ab2ca25
+Content-Type: application/json
+
+{
+    "produto": "Bolo de Cenoura",
+    "valor": 20,
+    "quantidade": 1,
+}
+
+###
+ 
+//DELETA
+DELETE http://localhost:3333/vendas/
